@@ -61,29 +61,6 @@ button:hover {
     animation: fadeIn 1s;
 }
 
-.featured-games {
-    padding: 20px;
-}
-
-.game-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-}
-
-.game-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.game-card:hover {
-    transform: scale(1.05);
-}
-
 footer {
     text-align: center;
     padding: 20px;
@@ -92,21 +69,24 @@ footer {
 
 .bottom-buttons {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .game-button {
-    margin: 0 10px;
-    padding: 10px 20px;
+    width: 150px;
+    height: 150px;
     border: none;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: transform 0.3s;
     border-radius: 5px;
 }
 
 .game-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
     transform: scale(1.05);
 }
 

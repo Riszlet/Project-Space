@@ -1,15 +1,14 @@
+// Dark Mode Toggle Function
 const modeToggle = document.getElementById('modeToggle');
 
 modeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    document.body.classList.toggle('light');
+    const body = document.body;
+    body.classList.toggle('light-mode');
 
-    if (document.body.classList.contains('dark')) {
-        modeToggle.textContent = '☀️ Light Mode';
+    // Change button text based on mode
+    if (body.classList.contains('light-mode')) {
+        modeToggle.textContent = '🌑 Dark Mode';
     } else {
-        modeToggle.textContent = '🌙 Dark Mode';
+        modeToggle.textContent = '🌙 Light Mode';
     }
 });
-
-// Set default mode
-document.body.classList.add('light');
